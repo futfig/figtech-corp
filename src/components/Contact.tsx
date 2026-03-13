@@ -174,13 +174,7 @@ export function Contact() {
             </button>
 
             <p className="text-xs text-center" style={{ color: '#838896' }}>
-              Or reach us directly at{' '}
-              <a
-                href="mailto:figtech10@gmail.com"
-                className="text-gold hover:underline"
-              >
-                figtech10@gmail.com
-              </a>
+              figtech10@gmail.com
             </p>
           </form>
         )}
