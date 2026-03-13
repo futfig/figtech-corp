@@ -1,9 +1,6 @@
 import { useState } from 'react'
 import { Send, CheckCircle, AlertCircle } from 'lucide-react'
 
-// Paste your Formspree form ID here after signing up at formspree.io
-const FORMSPREE_ID = 'YOUR_FORM_ID'
-
 type Status = 'idle' | 'submitting' | 'success' | 'error'
 
 export function Contact() {
@@ -14,13 +11,16 @@ export function Contact() {
     setStatus('submitting')
 
     const form = e.currentTarget
-    const data = new FormData(form)
+    const data = Object.fromEntries(new FormData(form))
 
     try {
-      const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+      const res = await fetch('https://formsubmit.co/ajax/figtech10@gmail.com', {
         method: 'POST',
-        body: data,
-        headers: { Accept: 'application/json' },
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify(data),
       })
 
       if (res.ok) {
