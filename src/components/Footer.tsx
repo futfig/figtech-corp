@@ -12,8 +12,6 @@ export function Footer() {
             F
           </div>
           <span>FigTech LLC &copy; {year}</span>
-          <span className="hidden md:inline">·</span>
-          <span className="hidden md:inline">Minnesota, USA</span>
         </div>
 
         <div className="flex items-center gap-6">

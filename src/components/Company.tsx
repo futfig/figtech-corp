@@ -34,7 +34,7 @@ export function Company() {
 
             <div className="flex flex-wrap gap-4 text-sm">
               {[
-                { icon: <Building2 className="w-4 h-4" />, text: 'FigTech LLC · Minnesota, USA' },
+                { icon: <Building2 className="w-4 h-4" />, text: 'FigTech LLC' },
                 { icon: <MapPin className="w-4 h-4" />, text: 'Incorporated 2026' },
                 { icon: <Code className="w-4 h-4" />, text: 'Pre-funded · MVP Stage' },
               ].map(({ icon, text }) => (
