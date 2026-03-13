@@ -25,11 +25,11 @@ export function Footer() {
             Privacy Policy
           </a>
           <a
-            href="mailto:hello@figtech.io"
+            href="mailto:figtech10@gmail.com"
             className="hover:text-white transition-colors duration-200 no-underline"
             style={{ color: '#838896' }}
           >
-            hello@figtech.io
+            figtech10@gmail.com
           </a>
         </div>
       </div>
