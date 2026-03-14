@@ -18,9 +18,9 @@ export function Company() {
         <div className="grid lg:grid-cols-3 gap-6">
           {/* Company card */}
           <div className="glass-card p-7 lg:col-span-2">
-            <h3 className="text-xl font-bold text-white mb-4">FigTech LLC</h3>
+            <h3 className="text-xl font-bold text-white mb-4">FigTech</h3>
             <p className="text-base leading-relaxed mb-5" style={{ color: '#838896' }}>
-              FigTech LLC is a technology startup building a data analytics and intelligence
+              FigTech is a technology startup building a data analytics and intelligence
               platform for international soccer fans. We are in active MVP development,
               focused on giving fans the tools to go deeper — tracking competitions,
               understanding teams and players, and predicting outcomes with the help of
@@ -36,7 +36,7 @@ export function Company() {
 
             <div className="flex flex-wrap gap-4 text-sm">
               {[
-                { icon: <Building2 className="w-4 h-4" />, text: 'FigTech LLC' },
+                { icon: <Building2 className="w-4 h-4" />, text: 'FigTech' },
                 { icon: <Code className="w-4 h-4" />, text: 'Pre-funded · MVP Stage' },
               ].map(({ icon, text }) => (
                 <span key={text} className="flex items-center gap-2" style={{ color: '#838896' }}>
@@ -59,7 +59,7 @@ export function Company() {
               <div>
                 <div className="font-bold text-white">Edison Figueroa</div>
                 <div className="text-sm" style={{ color: '#838896' }}>
-                  Founder &amp; Builder, FigTech LLC
+                  Founder &amp; Builder, FigTech
                 </div>
               </div>
             </div>

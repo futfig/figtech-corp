@@ -11,7 +11,7 @@ export function Footer() {
           >
             F
           </div>
-          <span>FigTech LLC &copy; {year}</span>
+          <span>FigTech &copy; {year}</span>
         </div>
 
         <div className="flex items-center gap-6">
