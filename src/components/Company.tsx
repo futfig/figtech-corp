@@ -26,8 +26,7 @@ export function Company() {
               a functional application foundation already in place.
             </p>
             <p className="text-base leading-relaxed mb-6" style={{ color: '#838896' }}>
-              Our thesis is focused: serious soccer fans have no product that helps them
-              understand tournament paths, model outcomes, and engage analytically with
+              Our thesis is focused: serious soccer fans have few products built specifically to help them understand tournament paths, model outcomes, and engage analytically with
               the competitions they care about most. Favo is that product. We are starting
               with a clear, launchable scope and building from there.
             </p>

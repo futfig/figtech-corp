@@ -39,8 +39,7 @@ export function Opportunity() {
               That is the gap Favo is built to fill — starting with major international tournaments.
             </p>
             <p className="text-base leading-relaxed" style={{ color: '#D8DAE5' }}>
-              Favo is built for that fan.{' '}
-              <span className="text-gold font-semibold">And the more fans use it, the smarter it gets.</span>
+              Favo is built for that fan, with models and analysis that can improve over time as more match and prediction data becomes available.
             </p>
           </div>
 
@@ -65,7 +64,7 @@ export function Opportunity() {
                 icon: <TrendingUp className="w-5 h-5" />,
                 stat: '↑',
                 label: 'Gets better over time',
-                sub: 'Every match, prediction, and user interaction makes the platform sharper',
+                sub: 'Match and prediction data help refine the platform over time',
                 color: '#F5A200',
               },
             ].map(({ icon, stat, label, sub, color }) => (
