@@ -1,0 +1,11 @@
+.gcloudignore
+.git
+.github
+node_modules
+src
+public
+*.ts
+*.tsx
+*.json
+*.md
+postcss.config.js
