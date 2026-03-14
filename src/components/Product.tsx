@@ -12,7 +12,7 @@ const features = [
     icon: <Target className="w-5 h-5" />,
     title: 'Outcome Prediction',
     description:
-      'ML-powered tools that help fans understand and predict match results before they happen. The more the platform learns, the sharper the predictions.',
+      'Data-driven tools that help fans understand and predict match results before they happen. As more tournament and user prediction data is incorporated, the platform can refine its models over time.',
     color: '#2DC4B2',
   },
   {
