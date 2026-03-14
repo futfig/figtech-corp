@@ -24,19 +24,19 @@ export function Opportunity() {
               className="font-black tracking-tight mb-6"
               style={{ fontSize: 'clamp(2rem, 4vw, 3rem)' }}
             >
-              International soccer has{' '}
-              <span className="text-gradient">3.5 billion fans.</span>{' '}
-              Most platforms still only show them the score.
+              Billions of soccer fans.{' '}
+              <span className="text-gradient">Most products still stop at scores, tables, and news.</span>
             </h2>
             <p className="text-base leading-relaxed mb-6" style={{ color: '#838896' }}>
-              Soccer is the world's sport. Across Europe, South America, Africa, and Asia,
-              hundreds of millions of fans follow clubs, competitions, and players with genuine
-              depth of knowledge — and genuine hunger to engage beyond a live score feed.
+              Soccer is the world's most followed sport, and major international tournaments
+              are its highest-engagement moments. Fans follow every match, track bracket paths,
+              and argue about scenarios — but the tools available to them were built for casual
+              consumption, not serious engagement.
             </p>
             <p className="text-base leading-relaxed mb-6" style={{ color: '#838896' }}>
-              The tools that exist today were built for casual consumption: scores, tables, news.
-              No platform takes the deep fan seriously as someone who wants to understand outcomes,
-              model scenarios, and track the sport with real analytical rigor.
+              Serious fans want to understand tournament paths, likely outcomes, and how one
+              match reshapes the entire competition. No product takes that seriously today.
+              That is the gap Favo is built to fill — starting with major international tournaments.
             </p>
             <p className="text-base leading-relaxed" style={{ color: '#D8DAE5' }}>
               Favo is built for that fan.{' '}
@@ -56,9 +56,9 @@ export function Opportunity() {
               },
               {
                 icon: <Zap className="w-5 h-5" />,
-                stat: '500+',
-                label: 'Competitions Worldwide',
-                sub: 'Top-tier leagues, cups, and international tournaments across every continent',
+                stat: '#1',
+                label: 'Clear First Wedge',
+                sub: 'Tournament engagement, scenario analysis, and prediction — not everything at once',
                 color: '#2DC4B2',
               },
               {

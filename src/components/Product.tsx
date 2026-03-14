@@ -3,9 +3,9 @@ import { BookOpen, Target, BarChart3, GitBranch, Users, Globe } from 'lucide-rea
 const features = [
   {
     icon: <BookOpen className="w-5 h-5" />,
-    title: 'Team & Player Intelligence',
+    title: 'Tournament Intelligence',
     description:
-      'Deep profiles, historical performance, head-to-head records, and trends across leagues and competitions worldwide. Know your team beyond the scoreboard.',
+      'Deep team profiles, historical tournament performance, head-to-head records, and match trends — all in the context of how competitions actually unfold.',
     color: '#F5A200',
   },
   {
@@ -38,9 +38,9 @@ const features = [
   },
   {
     icon: <Globe className="w-5 h-5" />,
-    title: 'Built for a Global Audience',
+    title: 'Multi-language Support',
     description:
-      'Full support for English, Spanish, French, and Portuguese — designed from the ground up for international soccer\'s global fan base.',
+      'English, Spanish, French, and Portuguese — built for fans who follow international tournaments regardless of where they watch from.',
     color: '#2DC4B2',
   },
 ]
@@ -58,12 +58,12 @@ export function Product() {
           >
             More than a stats app.
             <br />
-            <span className="text-gradient">A platform that helps you think about the game.</span>
+            <span className="text-gradient">A platform that helps fans analyze tournament paths, model scenarios, and make better predictions.</span>
           </h2>
           <p className="max-w-2xl mx-auto text-base leading-relaxed" style={{ color: '#838896' }}>
             Most soccer platforms show you what happened. Favo helps you understand why —
-            and what's likely to happen next. It learns from every match, every user, and
-            every prediction to get sharper over time.
+            and what's likely to happen next in the tournament. The initial focus is
+            tournament engagement, scenario analysis, and prediction.
           </p>
         </div>
 

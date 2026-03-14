@@ -20,18 +20,16 @@ export function Company() {
           <div className="glass-card p-7 lg:col-span-2">
             <h3 className="text-xl font-bold text-white mb-4">FigTech</h3>
             <p className="text-base leading-relaxed mb-5" style={{ color: '#838896' }}>
-              FigTech is a technology startup building a data analytics and intelligence
-              platform for international soccer fans. We are in active MVP development,
-              focused on giving fans the tools to go deeper — tracking competitions,
-              understanding teams and players, and predicting outcomes with the help of
-              machine learning.
+              FigTech is a technology startup building a soccer intelligence platform,
+              starting with tournament tracking, scenario analysis, and prediction tools
+              for major international competitions. We are in active MVP development with
+              a functional application foundation already in place.
             </p>
             <p className="text-base leading-relaxed mb-6" style={{ color: '#838896' }}>
-              Our thesis is straightforward: soccer has more engaged fans than any sport on
-              earth, and none of them have a platform that takes their depth of knowledge
-              seriously. Favo is built to change that. The platform improves as it grows —
-              more users, more match data, and more prediction feedback means sharper
-              analytics and better insight for everyone.
+              Our thesis is focused: serious soccer fans have no product that helps them
+              understand tournament paths, model outcomes, and engage analytically with
+              the competitions they care about most. Favo is that product. We are starting
+              with a clear, launchable scope and building from there.
             </p>
 
             <div className="flex flex-wrap gap-4 text-sm">
@@ -64,21 +62,11 @@ export function Company() {
               </div>
             </div>
             <p className="text-sm leading-relaxed" style={{ color: '#838896' }}>
-              Edison is building Favo end-to-end — backend infrastructure, web frontend,
-              Android client, and product design. The platform is in active development
-              with a functional application foundation already in place.
+              Edison is building Favo end-to-end — product, design, and engineering.
+              A functional application foundation is already in place, with backend
+              services live on Google Cloud Platform.
             </p>
 
-            <div
-              className="mt-5 pt-5 border-t text-sm"
-              style={{ borderColor: 'rgba(37,42,53,0.5)', color: '#838896' }}
-            >
-              <div className="flex flex-col gap-1.5">
-                <span>Backend · Kotlin / Ktor / GCP</span>
-                <span>Web · React / TypeScript</span>
-                <span>Mobile · Kotlin / Jetpack Compose</span>
-              </div>
-            </div>
           </div>
         </div>
       </div>

@@ -20,7 +20,7 @@ export function Hero() {
         <div className="flex justify-center mb-8">
           <span className="pill">
             <span className="w-1.5 h-1.5 rounded-full" style={{ background: '#2DC4B2' }} />
-            MVP Development · International Soccer
+            MVP Development · Tournament Soccer Intelligence
           </span>
         </div>
 
@@ -31,7 +31,7 @@ export function Hero() {
         >
           The intelligence layer
           <br />
-          <span className="text-gradient">for international soccer.</span>
+          <span className="text-gradient">for tournament soccer.</span>
         </h1>
 
         {/* Subheadline */}
@@ -39,9 +39,9 @@ export function Hero() {
           className="max-w-2xl mx-auto mb-10 leading-relaxed"
           style={{ color: '#838896', fontSize: 'clamp(1rem, 2vw, 1.2rem)' }}
         >
-          Favo helps fans around the world understand their favorite leagues, teams, and
-          players — and predict what happens next. Powered by deep data analytics and
-          machine learning that gets smarter as the platform grows.
+          Favo helps fans and bracket-minded followers understand tournament paths,
+          compare scenarios, and predict what happens next — starting with major
+          international soccer competitions.
         </p>
 
         {/* CTAs */}
@@ -64,8 +64,8 @@ export function Hero() {
             },
             {
               icon: <TrendingUp className="w-4 h-4" style={{ color: '#2DC4B2' }} />,
-              label: '500+ Competitions',
-              sub: 'Leagues and tournaments worldwide',
+              label: 'Major Tournaments First',
+              sub: 'Starting focused, built to expand',
             },
             {
               icon: (
