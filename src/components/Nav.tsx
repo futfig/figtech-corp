@@ -11,9 +11,6 @@ export function Nav() {
             <span style={{ color: '#0B0C0F' }}>F</span>
           </div>
           <span className="font-bold text-white text-base tracking-tight">FigTech</span>
-          <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-surface-secondary text-[#838896] border border-border">
-            LLC
-          </span>
         </a>
 
         {/* Links */}
