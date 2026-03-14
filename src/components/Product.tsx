@@ -1,46 +1,46 @@
-import { Target, GitBranch, BarChart3, RefreshCw, Users, Globe } from 'lucide-react'
+import { BookOpen, Target, BarChart3, GitBranch, Users, Globe } from 'lucide-react'
 
 const features = [
   {
-    icon: <GitBranch className="w-5 h-5" />,
-    title: 'Bracket Creation',
+    icon: <BookOpen className="w-5 h-5" />,
+    title: 'Team & Player Intelligence',
     description:
-      'Build full tournament brackets from group stage through the final. Favo structures the decision-making process so every pick reflects real tournament logic.',
+      'Deep profiles, historical performance, head-to-head records, and trends across leagues and competitions worldwide. Know your team beyond the scoreboard.',
     color: '#F5A200',
-  },
-  {
-    icon: <BarChart3 className="w-5 h-5" />,
-    title: 'Scenario Analysis',
-    description:
-      'Explore how different group-stage outcomes ripple through the knockout rounds. Model alternative paths and understand which bracket configurations are most defensible.',
-    color: '#2DC4B2',
   },
   {
     icon: <Target className="w-5 h-5" />,
-    title: 'Outcome Simulation',
+    title: 'Outcome Prediction',
     description:
-      'Simulate tournament progressions against multiple team configurations. Favo helps bracket managers see the downstream impact of each pick before committing.',
+      'ML-powered tools that help fans understand and predict match results before they happen. The more the platform learns, the sharper the predictions.',
+    color: '#2DC4B2',
+  },
+  {
+    icon: <BarChart3 className="w-5 h-5" />,
+    title: 'Competition Tracking',
+    description:
+      'Follow your favorite competitions in real time — from group stage to final. Standings, fixtures, and results updated as matches unfold.',
     color: '#F5A200',
   },
   {
-    icon: <RefreshCw className="w-5 h-5" />,
-    title: 'Live Tournament Tracking',
+    icon: <GitBranch className="w-5 h-5" />,
+    title: 'Scenario Analysis',
     description:
-      'As official match data is ingested, brackets update in real time. Fans can revisit decisions, track scoring, and stay engaged across the full 6-week tournament window.',
+      'Model what different results mean for your team\'s path through a competition. Understand how one match changes everything that follows.',
     color: '#2DC4B2',
   },
   {
     icon: <Users className="w-5 h-5" />,
-    title: 'League & Group Play',
+    title: 'Community & Prediction Leagues',
     description:
-      'Create private leagues and compete with friends, colleagues, or communities. Leaderboards and scoring are calculated automatically as the tournament progresses.',
+      'Create private leagues with friends, compare predictions, and see how your read on the game stacks up against the community.',
     color: '#F5A200',
   },
   {
     icon: <Globe className="w-5 h-5" />,
-    title: 'Multi-locale Support',
+    title: 'Built for a Global Audience',
     description:
-      'Favo is built for a global audience. The platform supports English, Spanish, French, and Portuguese — reflecting the host nations and the World Cup\'s international reach.',
+      'Full support for English, Spanish, French, and Portuguese — designed from the ground up for international soccer\'s global fan base.',
     color: '#2DC4B2',
   },
 ]
@@ -56,14 +56,14 @@ export function Product() {
             className="font-black tracking-tight mb-5"
             style={{ fontSize: 'clamp(2rem, 4vw, 3rem)' }}
           >
-            More than a bracket form.
+            More than a stats app.
             <br />
-            <span className="text-gradient">A full engagement platform.</span>
+            <span className="text-gradient">A platform that helps you think about the game.</span>
           </h2>
           <p className="max-w-2xl mx-auto text-base leading-relaxed" style={{ color: '#838896' }}>
-            Favo is designed around a simple insight: fans don't lose interest after they submit
-            a bracket — they lose interest when the platform stops responding to the tournament.
-            We keep them engaged throughout.
+            Most soccer platforms show you what happened. Favo helps you understand why —
+            and what's likely to happen next. It learns from every match, every user, and
+            every prediction to get sharper over time.
           </p>
         </div>
 

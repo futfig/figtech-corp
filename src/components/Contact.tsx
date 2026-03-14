@@ -47,9 +47,9 @@ export function Contact() {
             <span className="text-gradient">early access or partnership?</span>
           </h2>
           <p className="text-base leading-relaxed" style={{ color: '#838896' }}>
-            Favo is in active development ahead of FIFA World Cup 2026. We are selectively
-            sharing early access with interested users and exploring partnership opportunities
-            with tournament communities, media organizations, and platform partners.
+            Favo is in active development. We are selectively sharing early access with
+            interested users and exploring partnership opportunities with soccer communities,
+            media organizations, and data partners.
           </p>
         </div>
 

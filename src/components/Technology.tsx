@@ -38,8 +38,8 @@ export function Technology() {
               structured data ingestion pipeline for official tournament data.
             </p>
             <p className="text-base leading-relaxed" style={{ color: '#838896' }}>
-              The architecture is scoped for the World Cup cycle — designed to scale for a
-              tournament-length burst, not over-engineered for hypothetical long-term load.
+              The architecture is designed to scale with the platform — built for real
+              load without over-engineering for hypothetical future demand.
               This is intentional: the MVP validates engagement and retention before the
               platform expands.
             </p>

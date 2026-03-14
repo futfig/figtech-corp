@@ -1,4 +1,4 @@
-import { Globe, Trophy, ArrowRight } from 'lucide-react'
+import { Globe, TrendingUp, ArrowRight } from 'lucide-react'
 
 export function Hero() {
   return (
@@ -19,11 +19,8 @@ export function Hero() {
         {/* Status pill */}
         <div className="flex justify-center mb-8">
           <span className="pill">
-            <span
-              className="w-1.5 h-1.5 rounded-full"
-              style={{ background: '#2DC4B2' }}
-            />
-            MVP Development · FIFA World Cup 2026
+            <span className="w-1.5 h-1.5 rounded-full" style={{ background: '#2DC4B2' }} />
+            MVP Development · International Soccer
           </span>
         </div>
 
@@ -32,9 +29,9 @@ export function Hero() {
           className="font-black tracking-tight leading-none mb-6"
           style={{ fontSize: 'clamp(2.5rem, 6vw, 5rem)' }}
         >
-          Tournament Engagement{' '}
+          The intelligence layer
           <br />
-          <span className="text-gradient">for the World's Biggest Stage.</span>
+          <span className="text-gradient">for international soccer.</span>
         </h1>
 
         {/* Subheadline */}
@@ -42,9 +39,9 @@ export function Hero() {
           className="max-w-2xl mx-auto mb-10 leading-relaxed"
           style={{ color: '#838896', fontSize: 'clamp(1rem, 2vw, 1.2rem)' }}
         >
-          Favo is a bracket creation, scenario analysis, and tournament tracking
-          platform built for FIFA World Cup 2026 — helping fans and bracket
-          managers stay engaged from the opening draw to the final whistle.
+          Favo helps fans around the world understand their favorite leagues, teams, and
+          players — and predict what happens next. Powered by deep data analytics and
+          machine learning that gets smarter as the platform grows.
         </p>
 
         {/* CTAs */}
@@ -60,16 +57,24 @@ export function Hero() {
         {/* Stat pills */}
         <div className="flex flex-wrap justify-center gap-4">
           {[
-            { icon: <Globe className="w-4 h-4 text-gold" />, label: '48 Teams', sub: 'Largest World Cup ever' },
-            { icon: <Trophy className="w-4 h-4 text-teal" />, label: '104 Matches', sub: '3 host nations' },
+            {
+              icon: <Globe className="w-4 h-4" style={{ color: '#F5A200' }} />,
+              label: '3.5B Fans',
+              sub: 'Soccer is the world\'s sport',
+            },
+            {
+              icon: <TrendingUp className="w-4 h-4" style={{ color: '#2DC4B2' }} />,
+              label: '500+ Competitions',
+              sub: 'Leagues and tournaments worldwide',
+            },
             {
               icon: (
                 <svg className="w-4 h-4" style={{ color: '#F5A200' }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.546A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.546z" />
                 </svg>
               ),
-              label: 'Real-time Data',
-              sub: 'Powered by official feeds',
+              label: 'Gets smarter over time',
+              sub: 'ML that improves with every match',
             },
           ].map(({ icon, label, sub }) => (
             <div key={label} className="glass-card flex items-center gap-3 px-5 py-3">

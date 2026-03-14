@@ -1,4 +1,4 @@
-import { MapPin, Building2, Code } from 'lucide-react'
+import { Building2, Code } from 'lucide-react'
 
 export function Company() {
   return (
@@ -20,22 +20,23 @@ export function Company() {
           <div className="glass-card p-7 lg:col-span-2">
             <h3 className="text-xl font-bold text-white mb-4">FigTech LLC</h3>
             <p className="text-base leading-relaxed mb-5" style={{ color: '#838896' }}>
-              FigTech LLC is a technology startup building fan engagement and decision-support
-              software for major international tournaments. We are currently in active MVP
-              development, targeting the FIFA World Cup 2026 tournament cycle as our initial
-              launch opportunity.
+              FigTech LLC is a technology startup building a data analytics and intelligence
+              platform for international soccer fans. We are in active MVP development,
+              focused on giving fans the tools to go deeper — tracking competitions,
+              understanding teams and players, and predicting outcomes with the help of
+              machine learning.
             </p>
             <p className="text-base leading-relaxed mb-6" style={{ color: '#838896' }}>
-              Our thesis is simple: the World Cup generates one of the highest-density fan
-              engagement windows in global sports. Existing products under-serve that window.
-              Favo is designed to fill that gap with a focused, well-engineered product that
-              treats the bracket as a living analytical instrument — not a one-time form.
+              Our thesis is straightforward: soccer has more engaged fans than any sport on
+              earth, and none of them have a platform that takes their depth of knowledge
+              seriously. Favo is built to change that. The platform improves as it grows —
+              more users, more match data, and more prediction feedback means sharper
+              analytics and better insight for everyone.
             </p>
 
             <div className="flex flex-wrap gap-4 text-sm">
               {[
                 { icon: <Building2 className="w-4 h-4" />, text: 'FigTech LLC' },
-                { icon: <MapPin className="w-4 h-4" />, text: 'Incorporated 2026' },
                 { icon: <Code className="w-4 h-4" />, text: 'Pre-funded · MVP Stage' },
               ].map(({ icon, text }) => (
                 <span key={text} className="flex items-center gap-2" style={{ color: '#838896' }}>
@@ -49,7 +50,6 @@ export function Company() {
           {/* Founder card */}
           <div className="glass-card p-7">
             <div className="flex items-start gap-4 mb-5">
-              {/* Avatar placeholder */}
               <div
                 className="w-12 h-12 rounded-2xl flex items-center justify-center font-black text-lg flex-shrink-0"
                 style={{ background: 'linear-gradient(135deg, #F5A200 0%, #2DC4B2 100%)', color: '#0B0C0F' }}
