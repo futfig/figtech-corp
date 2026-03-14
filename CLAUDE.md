@@ -74,8 +74,8 @@ To update the Worker, edit it directly in the Cloudflare dashboard (there is no 
 ## Contact form
 
 - **Provider:** Formsubmit.co
-- **Destination:** `figtech10@gmail.com`
-- **Activation:** First submission sends a confirmation email to `figtech10@gmail.com` — must be clicked to activate delivery
+- **Destination:** `edison.figueroa@figtech.app`
+- **Activation:** First submission sends a confirmation email to `edison.figueroa@figtech.app` — must be clicked to activate delivery
 
 ---
 
