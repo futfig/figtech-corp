@@ -14,7 +14,7 @@ export function Contact() {
     const data = Object.fromEntries(new FormData(form))
 
     try {
-      const res = await fetch('https://formsubmit.co/ajax/figtech10@gmail.com', {
+      const res = await fetch('https://formsubmit.co/ajax/edison.figueroa@figtech.app', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -148,7 +148,7 @@ export function Contact() {
             {status === 'error' && (
               <div className="flex items-center gap-2 text-sm" style={{ color: '#F03636' }}>
                 <AlertCircle className="w-4 h-4 flex-shrink-0" />
-                Something went wrong. Please try again or email us directly at figtech10@gmail.com
+                Something went wrong. Please try again or email us directly at edison.figueroa@figtech.app
               </div>
             )}
 
@@ -174,7 +174,7 @@ export function Contact() {
             </button>
 
             <p className="text-xs text-center" style={{ color: '#838896' }}>
-              figtech10@gmail.com
+              edison.figueroa@figtech.app
             </p>
           </form>
         )}
