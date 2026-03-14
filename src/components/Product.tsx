@@ -85,19 +85,6 @@ export function Product() {
           ))}
         </div>
 
-        {/* Platform callout */}
-        <div
-          className="glass-card mt-10 p-8 text-center"
-          style={{ borderColor: 'rgba(245,162,0,0.15)' }}
-        >
-          <p className="text-base font-medium" style={{ color: '#D8DAE5' }}>
-            Favo is available as a{' '}
-            <span className="text-gold font-bold">web application</span> and a{' '}
-            <span className="text-gold font-bold">native Android app</span>, built on a shared
-            backend infrastructure deployed on{' '}
-            <span className="text-teal font-bold">Google Cloud Platform</span>.
-          </p>
-        </div>
       </div>
     </section>
   )
