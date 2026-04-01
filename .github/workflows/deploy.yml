@@ -39,12 +39,12 @@ jobs:
         uses: google-github-actions/upload-cloud-storage@v2
         with:
           path: dist
-          destination: figtech-corp-web
+          destination: orvka-corp-web
           parent: false
 
       - name: Set cache headers
         run: |
-          gcloud storage objects update gs://figtech-corp-web/index.html \
+          gcloud storage objects update gs://orvka-corp-web/index.html \
             --cache-control="no-cache,no-store"
-          gcloud storage objects update "gs://figtech-corp-web/assets/**" \
+          gcloud storage objects update "gs://orvka-corp-web/assets/**" \
             --cache-control="public,max-age=31536000,immutable"

@@ -8,9 +8,9 @@ export function Nav() {
             className="w-8 h-8 rounded-lg flex items-center justify-center font-black text-sm"
             style={{ background: 'linear-gradient(135deg, #F5A200 0%, #2DC4B2 100%)' }}
           >
-            <span style={{ color: '#0B0C0F' }}>F</span>
+            <span style={{ color: '#0B0C0F' }}>O</span>
           </div>
-          <span className="font-bold text-white text-base tracking-tight">FigTech</span>
+          <span className="font-bold text-white text-base tracking-tight">Orvka</span>
         </a>
 
         {/* Links */}

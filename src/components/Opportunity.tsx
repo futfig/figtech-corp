@@ -36,10 +36,10 @@ export function Opportunity() {
             <p className="text-base leading-relaxed mb-6" style={{ color: '#838896' }}>
               Serious fans want to understand tournament paths, likely outcomes, and how one
               match reshapes the entire competition. Most products still focus on scores, tables, and news rather than helping fans analyze tournament paths and likely outcomes.
-              That is the gap Favo is built to fill — starting with major international tournaments.
+              That is the gap Orvka is built to fill — starting with major international tournaments.
             </p>
             <p className="text-base leading-relaxed" style={{ color: '#D8DAE5' }}>
-              Favo is built for that fan, with models and analysis that can improve over time as more match and prediction data becomes available.
+              Orvka is built for that fan, with models and analysis that can improve over time as more match and prediction data becomes available.
             </p>
           </div>
 

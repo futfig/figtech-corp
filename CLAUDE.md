@@ -1,4 +1,4 @@
-# CLAUDE.md — FigTech Corporate Website
+# CLAUDE.md — Orvka Corporate Website
 
 This file provides guidance to Claude Code when working in this repository.
 
@@ -6,9 +6,9 @@ This file provides guidance to Claude Code when working in this repository.
 
 ## What this repo is
 
-The corporate website for **FigTech**, the company behind **Favo** — an international soccer intelligence and engagement platform powered by deep data analytics and machine learning.
+The corporate website for **Orvka** — a FIFA World Cup prediction app. Users create leagues, pick match winners, and compete with friends on leaderboards.
 
-- **Live URL:** https://figtech.app
+- **Live URL:** https://orvka.com
 - **GitHub:** https://github.com/futfig/figtech-corp
 - **GCP project:** `fut-gcp`
 
@@ -24,8 +24,8 @@ npm run build      # Production build → dist/
 ### Deploy manually
 ```bash
 npm run build
-gsutil -m cp -r dist/* gs://figtech-corp-web/
-gsutil setmeta -h "Cache-Control:no-cache,no-store" gs://figtech-corp-web/index.html
+gsutil -m cp -r dist/* gs://orvka-corp-web/
+gsutil setmeta -h "Cache-Control:no-cache,no-store" gs://orvka-corp-web/index.html
 ```
 
 Git push to `main` triggers automatic CI/CD deploy via GitHub Actions.
@@ -35,13 +35,13 @@ Git push to `main` triggers automatic CI/CD deploy via GitHub Actions.
 ## Architecture
 
 ### Hosting
-- **GCS bucket:** `gs://figtech-corp-web` (us-central1, public)
-- **Custom domain:** `figtech.app` via Cloudflare Worker named `figtech-app-proxy`
-- The Worker proxies `figtech.app` → `storage.googleapis.com/figtech-corp-web/`
+- **GCS bucket:** `gs://orvka-corp-web` (us-central1, public)
+- **Custom domain:** `orvka.com` via Cloudflare Worker named `orvka-com-proxy`
+- The Worker proxies `orvka.com` → `storage.googleapis.com/orvka-corp-web/`
 - HTTPS is handled automatically by Cloudflare
 
-### Why a Worker instead of GCS domain-named bucket
-GCS domain-named bucket creation (e.g. `gs://www.figtech.app`) requires Google Search Console domain verification under the same Google account as the GCP project owner. This verification did not propagate correctly. The Cloudflare Worker approach bypasses this entirely and is more robust.
+### Redirect
+- `figtech.app` and `www.figtech.app` redirect 301 → `https://orvka.com` via the updated `figtech-app-proxy` Cloudflare Worker
 
 ### CI/CD
 - GitHub Actions: `.github/workflows/deploy.yml`
@@ -54,28 +54,21 @@ GCS domain-named bucket creation (e.g. `gs://www.figtech.app`) requires Google S
 
 | Item | Value |
 |------|-------|
-| Domain | `figtech.app` |
+| Domain | `orvka.com` |
 | Registrar | Cloudflare |
-| Cloudflare account | `edison.figueroa@gmail.com` |
 | DNS | Managed by Cloudflare |
 
-### DNS records
-- `TXT @` → `google-site-verification=ay0E7cbntwCqWl-PdN0uMR9wqzn_FQSD5DWOGk9E1PU` (Search Console verification)
-
-### Cloudflare Worker
-- **Name:** `figtech-app-proxy`
-- **Custom domains:** `figtech.app`, `www.figtech.app`
-- Edit at: Cloudflare dashboard → Workers & Pages → figtech-app-proxy
-
-To update the Worker, edit it directly in the Cloudflare dashboard (there is no CLI deploy for the Worker currently).
+### Cloudflare Workers
+- **`orvka-com-proxy`** — proxies `orvka.com` and `www.orvka.com` → GCS bucket `orvka-corp-web`
+- **`figtech-app-proxy`** — redirects `figtech.app` and `www.figtech.app` → `https://orvka.com` (301)
 
 ---
 
 ## Contact form
 
 - **Provider:** Formsubmit.co
-- **Destination:** `edison.figueroa@figtech.app`
-- **Activation:** First submission sends a confirmation email to `edison.figueroa@figtech.app` — must be clicked to activate delivery
+- **Destination:** `hello@orvka.com`
+- **Activation:** First submission sends a confirmation email to `hello@orvka.com` — must be clicked to activate delivery
 
 ---
 
@@ -83,17 +76,15 @@ To update the Worker, edit it directly in the Cloudflare dashboard (there is no 
 
 | Account | Role |
 |---------|------|
-| `edison.figueroa@gmail.com` | Project owner (use for GCS bucket operations, Search Console) |
+| `gcp-admin@orvka.com` | Project owner |
 | `github-actions@fut-gcp.iam.gserviceaccount.com` | CI/CD deployments |
-
-Always use `gcloud config set account edison.figueroa@gmail.com` for operations that require domain ownership (e.g. creating domain-named GCS buckets).
 
 ---
 
 ## Positioning & copy rules
 
-- Company name on the page: **FigTech** (not "FigTech LLC")
-- Product name: **Favo**
+- Product/company name: **Orvka**
+- No mentions of FigTech or Favo
 - No mentions of FIFA, World Cup, or specific tournament years
 - No mentions of Minnesota or specific location
 - No mailto: links — all contact routes to the form at `#contact`
@@ -116,6 +107,6 @@ Dark Stadium theme (shared with futfan product):
 | Repo | Purpose |
 |------|---------|
 | `futfig/futfan-services` | Backend — Kotlin/Ktor, deployed on GCP App Engine |
-| `futfig/futfan-web` | Web app (Favo product) — React/TypeScript |
-| `futfig/futfan-android` | Android app (Favo product) — Kotlin/Compose |
+| `futfig/futfan-web` | Web app — React/TypeScript |
+| `futfig/futfan-android` | Android app — Kotlin/Compose |
 | `futfig/figtech-corp` | This repo — corporate website |

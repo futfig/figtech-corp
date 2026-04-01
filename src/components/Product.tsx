@@ -61,7 +61,7 @@ export function Product() {
             <span className="text-gradient">A platform that helps fans analyze tournament paths, model scenarios, and make better predictions.</span>
           </h2>
           <p className="max-w-2xl mx-auto text-base leading-relaxed" style={{ color: '#838896' }}>
-            Most soccer platforms show you what happened. Favo helps you understand why —
+            Most soccer platforms show you what happened. Orvka helps you understand why —
             and what's likely to happen next in the tournament. The initial focus is
             tournament engagement, scenario analysis, and prediction.
           </p>

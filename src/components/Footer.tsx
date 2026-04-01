@@ -9,9 +9,9 @@ export function Footer() {
             className="w-5 h-5 rounded flex items-center justify-center font-black text-xs"
             style={{ background: 'linear-gradient(135deg, #F5A200 0%, #2DC4B2 100%)', color: '#0B0C0F' }}
           >
-            F
+            O
           </div>
-          <span>FigTech &copy; {year}</span>
+          <span>Orvka &copy; {year}</span>
         </div>
 
         <div className="flex items-center gap-6">

@@ -39,7 +39,7 @@ export function Hero() {
           className="max-w-2xl mx-auto mb-10 leading-relaxed"
           style={{ color: '#838896', fontSize: 'clamp(1rem, 2vw, 1.2rem)' }}
         >
-          Favo helps fans and bracket-minded followers understand tournament paths,
+          Orvka helps fans and bracket-minded followers understand tournament paths,
           compare scenarios, and predict what happens next — starting with major
           international soccer competitions.
         </p>

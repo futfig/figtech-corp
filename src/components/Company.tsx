@@ -18,9 +18,9 @@ export function Company() {
         <div className="grid lg:grid-cols-3 gap-6">
           {/* Company card */}
           <div className="glass-card p-7 lg:col-span-2">
-            <h3 className="text-xl font-bold text-white mb-4">FigTech</h3>
+            <h3 className="text-xl font-bold text-white mb-4">Orvka</h3>
             <p className="text-base leading-relaxed mb-5" style={{ color: '#838896' }}>
-              FigTech is a technology startup building a soccer intelligence platform,
+              Orvka is a technology startup building a soccer prediction platform,
               starting with tournament tracking, scenario analysis, and prediction tools
               for major international competitions. We are in active MVP development with
               a functional application foundation already in place.
@@ -28,13 +28,13 @@ export function Company() {
             <p className="text-base leading-relaxed mb-6" style={{ color: '#838896' }}>
               Our thesis is focused: serious soccer fans have few products built specifically
               to help them understand tournament paths, model outcomes, and engage analytically
-              with the competitions they care about most. Favo is that product. We are
+              with the competitions they care about most. Orvka is that product. We are
               starting with a clear, launchable scope and building from there.
             </p>
 
             <div className="flex flex-wrap gap-4 text-sm">
               {[
-                { icon: <Building2 className="w-4 h-4" />, text: 'FigTech' },
+                { icon: <Building2 className="w-4 h-4" />, text: 'Orvka' },
                 { icon: <Code className="w-4 h-4" />, text: 'Pre-funded · MVP Stage' },
               ].map(({ icon, text }) => (
                 <span key={text} className="flex items-center gap-2" style={{ color: '#838896' }}>
@@ -57,12 +57,12 @@ export function Company() {
               <div>
                 <div className="font-bold text-white">Edison Figueroa</div>
                 <div className="text-sm" style={{ color: '#838896' }}>
-                  Founder &amp; Builder, FigTech
+                  Founder &amp; Builder, Orvka
                 </div>
               </div>
             </div>
             <p className="text-sm leading-relaxed" style={{ color: '#838896' }}>
-              Edison is building Favo end-to-end — product, design, and engineering.
+              Edison is building Orvka end-to-end — product, design, and engineering.
               A functional application foundation is already in place, with backend
               services live on Google Cloud Platform.
             </p>

@@ -14,7 +14,7 @@ export function Contact() {
     const data = Object.fromEntries(new FormData(form))
 
     try {
-      const res = await fetch('https://formsubmit.co/ajax/edison.figueroa@figtech.app', {
+      const res = await fetch('https://formsubmit.co/ajax/hello@orvka.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -47,7 +47,7 @@ export function Contact() {
             <span className="text-gradient">early access or partnership?</span>
           </h2>
           <p className="text-base leading-relaxed" style={{ color: '#838896' }}>
-            Favo is in active development. We are selectively sharing early access with
+            Orvka is in active development. We are selectively sharing early access with
             interested users and exploring partnership opportunities with soccer communities,
             media organizations, and data partners.
           </p>
@@ -148,7 +148,7 @@ export function Contact() {
             {status === 'error' && (
               <div className="flex items-center gap-2 text-sm" style={{ color: '#F03636' }}>
                 <AlertCircle className="w-4 h-4 flex-shrink-0" />
-                Something went wrong. Please try again or email us directly at edison.figueroa@figtech.app
+                Something went wrong. Please try again or email us directly at hello@orvka.com
               </div>
             )}
 
@@ -174,7 +174,7 @@ export function Contact() {
             </button>
 
             <p className="text-xs text-center" style={{ color: '#838896' }}>
-              edison.figueroa@figtech.app
+              hello@orvka.com
             </p>
           </form>
         )}

@@ -1,0 +1,21 @@
+[debug] [2026-03-13T22:29:40.284Z] ----------------------------------------------------------------------
+[debug] [2026-03-13T22:29:40.285Z] Command:       /opt/homebrew/Cellar/node/24.6.0/bin/node /opt/homebrew/bin/firebase projects:addfirebase fut-gcp
+[debug] [2026-03-13T22:29:40.285Z] CLI Version:   15.10.0
+[debug] [2026-03-13T22:29:40.285Z] Platform:      darwin
+[debug] [2026-03-13T22:29:40.285Z] Node Version:  v24.6.0
+[debug] [2026-03-13T22:29:40.285Z] Time:          Fri Mar 13 2026 17:29:40 GMT-0500 (Central Daylight Time)
+[debug] [2026-03-13T22:29:40.285Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-03-13T22:29:40.352Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-03-13T22:29:40.685Z] Running auto auth
+[debug] [2026-03-13T22:29:40.687Z] No OAuth tokens found
+[debug] [2026-03-13T22:29:40.688Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/fut-gcp:addFirebase [none]
+[debug] [2026-03-13T22:29:41.352Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/fut-gcp:addFirebase 403
+[debug] [2026-03-13T22:29:41.353Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/fut-gcp:addFirebase {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2026-03-13T22:29:41.354Z] Request to https://firebase.googleapis.com/v1beta1/projects/fut-gcp:addFirebase had HTTP Error: 403, The caller does not have permission
+[debug] [2026-03-13T22:29:41.355Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/fut-gcp:addFirebase had HTTP Error: 403, The caller does not have permission
+    at responseToError (/opt/homebrew/lib/node_modules/firebase-tools/lib/responseToError.js:53:12)
+    at RetryOperation._fn (/opt/homebrew/lib/node_modules/firebase-tools/lib/apiv2.js:333:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] 
+[error] Error: Failed to add Firebase to Google Cloud Platform project. See firebase-debug.log for more info.
