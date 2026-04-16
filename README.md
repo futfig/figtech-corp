@@ -1,6 +1,6 @@
-# figtech-corp
+# orvka-corp
 
-Corporate website for [FigTech](https://figtech.app) — the company behind **Favo**, a tournament soccer intelligence platform.
+Corporate website for [Orvka](https://corp.orvka.com) — a FIFA World Cup prediction app.
 
 ## Stack
 
@@ -23,10 +23,10 @@ Push to `main` triggers automatic CI/CD via GitHub Actions.
 ```bash
 # Manual deploy
 npm run build
-gsutil -m cp -r dist/* gs://figtech-corp-web/
-gsutil setmeta -h "Cache-Control:no-cache,no-store" gs://figtech-corp-web/index.html
+gsutil -m cp -r dist/* gs://orvka-web-corp/
+gsutil setmeta -h "Cache-Control:no-cache,no-store" gs://orvka-web-corp/index.html
 ```
 
 ## Contact
 
-[edison.figueroa@figtech.app](mailto:edison.figueroa@figtech.app)
+[hello@orvka.com](mailto:hello@orvka.com)

@@ -4,6 +4,10 @@ on:
   push:
     branches: [main]
 
+env:
+  PROJECT_ID: orvka-predict
+  BUCKET: orvka-web-corp
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -27,24 +31,26 @@ jobs:
         run: npm run build
 
       - name: Authenticate to GCP
-        id: auth
         uses: google-github-actions/auth@v2
         with:
-          credentials_json: '${{ secrets.GCP_SERVICE_ACCOUNT_KEY }}'
+          workload_identity_provider: projects/1045597417675/locations/global/workloadIdentityPools/github-pool/providers/github-provider
+          service_account: github-actions@orvka-predict.iam.gserviceaccount.com
 
       - name: Set up gcloud SDK
         uses: google-github-actions/setup-gcloud@v2
+        with:
+          project_id: ${{ env.PROJECT_ID }}
 
       - name: Upload to GCS
         uses: google-github-actions/upload-cloud-storage@v2
         with:
           path: dist
-          destination: orvka-corp-web
+          destination: ${{ env.BUCKET }}
           parent: false
 
       - name: Set cache headers
         run: |
-          gcloud storage objects update gs://orvka-corp-web/index.html \
+          gcloud storage objects update gs://${{ env.BUCKET }}/index.html \
             --cache-control="no-cache,no-store"
-          gcloud storage objects update "gs://orvka-corp-web/assets/**" \
+          gcloud storage objects update "gs://${{ env.BUCKET }}/assets/**" \
             --cache-control="public,max-age=31536000,immutable"

@@ -8,9 +8,11 @@ This file provides guidance to Claude Code when working in this repository.
 
 The corporate website for **Orvka** — a FIFA World Cup prediction app. Users create leagues, pick match winners, and compete with friends on leaderboards.
 
-- **Live URL:** https://orvka.com
+- **Live URL:** https://corp.orvka.com
 - **GitHub:** https://github.com/futfig/figtech-corp
-- **GCP project:** `fut-gcp`
+- **GCP project:** `orvka-predict`
+
+> **Note:** `orvka.com` (root) is reserved for the **orvka-web** product app (deployed on Firebase). The corporate site lives at the `corp.` subdomain.
 
 ---
 
@@ -24,8 +26,8 @@ npm run build      # Production build → dist/
 ### Deploy manually
 ```bash
 npm run build
-gsutil -m cp -r dist/* gs://orvka-corp-web/
-gsutil setmeta -h "Cache-Control:no-cache,no-store" gs://orvka-corp-web/index.html
+gsutil -m cp -r dist/* gs://orvka-web-corp/
+gsutil setmeta -h "Cache-Control:no-cache,no-store" gs://orvka-web-corp/index.html
 ```
 
 Git push to `main` triggers automatic CI/CD deploy via GitHub Actions.
@@ -35,18 +37,18 @@ Git push to `main` triggers automatic CI/CD deploy via GitHub Actions.
 ## Architecture
 
 ### Hosting
-- **GCS bucket:** `gs://orvka-corp-web` (us-central1, public)
-- **Custom domain:** `orvka.com` via Cloudflare Worker named `orvka-com-proxy`
-- The Worker proxies `orvka.com` → `storage.googleapis.com/orvka-corp-web/`
+- **GCS bucket:** `gs://orvka-web-corp` (us-central1, public)
+- **Custom domain:** `corp.orvka.com` via Cloudflare Worker named `orvka-com-proxy`
+- The Worker proxies `corp.orvka.com` → `storage.googleapis.com/orvka-web-corp/`
 - HTTPS is handled automatically by Cloudflare
 
 ### Redirect
-- `figtech.app` and `www.figtech.app` redirect 301 → `https://orvka.com` via the updated `figtech-app-proxy` Cloudflare Worker
+- `figtech.app` and `www.figtech.app` redirect 301 → `https://corp.orvka.com` via the `figtech-app-proxy` Cloudflare Worker
 
 ### CI/CD
 - GitHub Actions: `.github/workflows/deploy.yml`
-- Secret required: `GCP_SERVICE_ACCOUNT_KEY` (set in futfig/figtech-corp repo secrets)
-- Service account: `github-actions@fut-gcp.iam.gserviceaccount.com` (has `roles/storage.admin`)
+- Auth: Workload Identity Federation (no secrets needed in repo) — OIDC provider `github-pool/github-provider` on orvka-predict
+- Service account: `github-actions@orvka-predict.iam.gserviceaccount.com` (has `roles/storage.admin` on bucket)
 
 ---
 
@@ -59,8 +61,8 @@ Git push to `main` triggers automatic CI/CD deploy via GitHub Actions.
 | DNS | Managed by Cloudflare |
 
 ### Cloudflare Workers
-- **`orvka-com-proxy`** — proxies `orvka.com` and `www.orvka.com` → GCS bucket `orvka-corp-web`
-- **`figtech-app-proxy`** — redirects `figtech.app` and `www.figtech.app` → `https://orvka.com` (301)
+- **`orvka-com-proxy`** — proxies `corp.orvka.com` → GCS bucket `orvka-web-corp`
+- **`figtech-app-proxy`** — redirects `figtech.app` and `www.figtech.app` → `https://corp.orvka.com` (301)
 
 ---
 
@@ -77,7 +79,7 @@ Git push to `main` triggers automatic CI/CD deploy via GitHub Actions.
 | Account | Role |
 |---------|------|
 | `gcp-admin@orvka.com` | Project owner |
-| `github-actions@fut-gcp.iam.gserviceaccount.com` | CI/CD deployments |
+| `github-actions@orvka-predict.iam.gserviceaccount.com` | CI/CD deployments (via WIF) |
 
 ---
 
