@@ -119,8 +119,28 @@ export function Privacy() {
             </p>
           </section>
 
+          <section id="data-deletion">
+            <h2 className="text-lg font-semibold text-white mb-3">9. How to delete your data</h2>
+            <p>To delete your Orvka account and all associated data:</p>
+            <ol className="list-decimal pl-5 space-y-1.5 mt-2">
+              <li>
+                Email{' '}
+                <a href="mailto:hello@orvka.com?subject=Delete%20my%20account" className="text-gold hover:underline">
+                  hello@orvka.com
+                </a>{' '}
+                with the subject "Delete my account"
+              </li>
+              <li>Include the email address associated with your Orvka account</li>
+              <li>We will delete your account and all associated data within 30 days</li>
+            </ol>
+            <p className="mt-3">
+              This includes your profile information, predictions, league memberships, and any
+              other data linked to your account.
+            </p>
+          </section>
+
           <section>
-            <h2 className="text-lg font-semibold text-white mb-3">9. Changes to this policy</h2>
+            <h2 className="text-lg font-semibold text-white mb-3">10. Changes to this policy</h2>
             <p>
               We may update this Privacy Policy from time to time. We will notify you of material
               changes by posting the updated policy on this page and updating the effective date.
@@ -129,7 +149,7 @@ export function Privacy() {
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-white mb-3">10. Contact</h2>
+            <h2 className="text-lg font-semibold text-white mb-3">11. Contact</h2>
             <p>
               If you have questions about this Privacy Policy, contact us at{' '}
               <a href="mailto:hello@orvka.com" className="text-gold hover:underline">
