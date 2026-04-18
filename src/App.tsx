@@ -5,8 +5,9 @@ import { Opportunity } from './components/Opportunity'
 import { Company } from './components/Company'
 import { Contact } from './components/Contact'
 import { Footer } from './components/Footer'
+import { Privacy } from './components/Privacy'
 
-export default function App() {
+function HomePage() {
   return (
     <div className="min-h-screen" style={{ background: '#0B0C0F' }}>
       <Nav />
@@ -22,4 +23,10 @@ export default function App() {
       <Footer />
     </div>
   )
+}
+
+export default function App() {
+  const path = window.location.pathname
+  if (path === '/privacy') return <Privacy />
+  return <HomePage />
 }
