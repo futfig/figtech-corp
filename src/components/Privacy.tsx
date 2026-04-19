@@ -8,7 +8,7 @@ export function Privacy() {
       <main className="max-w-3xl mx-auto px-6 py-20">
         <h1 className="text-3xl font-bold text-white mb-2">Privacy Policy</h1>
         <p className="text-sm mb-12" style={{ color: '#838896' }}>
-          Effective date: April 17, 2026
+          Effective date: April 18, 2026
         </p>
 
         <div className="space-y-8 text-sm leading-relaxed" style={{ color: '#C0C3CC' }}>
@@ -85,7 +85,45 @@ export function Privacy() {
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-white mb-3">6. Data retention</h2>
+            <h2 className="text-lg font-semibold text-white mb-3">6. Government and law enforcement requests</h2>
+            <p>
+              We may receive requests for user information from courts, regulators, or law
+              enforcement. We take these requests seriously and apply the following policies:
+            </p>
+            <ul className="list-disc pl-5 space-y-1.5 mt-3">
+              <li>
+                <span className="font-semibold text-white">Legal review.</span> Every request is
+                reviewed for legal validity before we respond. We require a properly scoped legal
+                instrument — such as a subpoena, court order, or warrant — appropriate to the
+                jurisdiction and the information requested.
+              </li>
+              <li>
+                <span className="font-semibold text-white">Challenging unlawful requests.</span>{' '}
+                Where a request appears overbroad, unlawful, or issued without proper authority,
+                we will push back, seek clarification, or — with the assistance of counsel — move
+                to narrow or quash it before producing any data.
+              </li>
+              <li>
+                <span className="font-semibold text-white">Data minimization.</span> When we are
+                required to respond, we disclose only the specific information the request
+                legally compels. We do not volunteer additional account, usage, or device data.
+              </li>
+              <li>
+                <span className="font-semibold text-white">Documentation.</span> We maintain an
+                internal record of each request received, our response, the legal basis for any
+                disclosure, and the individuals involved in the review.
+              </li>
+            </ul>
+            <p className="mt-3">
+              Where permitted by law, we will notify the affected user before disclosing their
+              information. We may delay or forgo notice if we are legally prohibited from giving
+              it (for example, under a non-disclosure order) or if there is a clear emergency
+              involving risk of death or serious injury.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-lg font-semibold text-white mb-3">7. Data retention</h2>
             <p>
               We retain your account data for as long as your account is active. If you delete your
               account, we will remove your personal information within 30 days, except where
@@ -94,7 +132,7 @@ export function Privacy() {
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-white mb-3">7. Your rights</h2>
+            <h2 className="text-lg font-semibold text-white mb-3">8. Your rights</h2>
             <p>You may:</p>
             <ul className="list-disc pl-5 space-y-1.5 mt-2">
               <li>Access the personal data we hold about you</li>
@@ -111,7 +149,7 @@ export function Privacy() {
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-white mb-3">8. Children's privacy</h2>
+            <h2 className="text-lg font-semibold text-white mb-3">9. Children's privacy</h2>
             <p>
               The Service is not directed to children under 13. We do not knowingly collect personal
               information from children under 13. If we become aware that a child under 13 has
@@ -120,7 +158,7 @@ export function Privacy() {
           </section>
 
           <section id="data-deletion">
-            <h2 className="text-lg font-semibold text-white mb-3">9. How to delete your data</h2>
+            <h2 className="text-lg font-semibold text-white mb-3">10. How to delete your data</h2>
             <p>To delete your Orvka account and all associated data:</p>
             <ol className="list-decimal pl-5 space-y-1.5 mt-2">
               <li>
@@ -140,7 +178,7 @@ export function Privacy() {
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-white mb-3">10. Changes to this policy</h2>
+            <h2 className="text-lg font-semibold text-white mb-3">11. Changes to this policy</h2>
             <p>
               We may update this Privacy Policy from time to time. We will notify you of material
               changes by posting the updated policy on this page and updating the effective date.
@@ -149,7 +187,7 @@ export function Privacy() {
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-white mb-3">11. Contact</h2>
+            <h2 className="text-lg font-semibold text-white mb-3">12. Contact</h2>
             <p>
               If you have questions about this Privacy Policy, contact us at{' '}
               <a href="mailto:hello@orvka.com" className="text-gold hover:underline">
