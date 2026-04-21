@@ -30,6 +30,14 @@ export default {
           'system-ui',
           'sans-serif',
         ],
+        brand: [
+          '-apple-system',
+          'BlinkMacSystemFont',
+          '"SF Pro Display"',
+          'Inter',
+          'system-ui',
+          'sans-serif',
+        ],
       },
       borderRadius: {
         DEFAULT: '1.25rem',
