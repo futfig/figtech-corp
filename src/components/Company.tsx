@@ -15,9 +15,8 @@ export function Company() {
           </h2>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-6">
-          {/* Company card */}
-          <div className="glass-card p-7 lg:col-span-2">
+        <div className="max-w-3xl mx-auto">
+          <div className="glass-card p-7">
             <h3 className="text-xl font-bold text-white mb-4">Orvka</h3>
             <p className="text-base leading-relaxed mb-5" style={{ color: '#838896' }}>
               Orvka is a technology startup building a soccer prediction platform,
@@ -43,30 +42,6 @@ export function Company() {
                 </span>
               ))}
             </div>
-          </div>
-
-          {/* Founder card */}
-          <div className="glass-card p-7">
-            <div className="flex items-start gap-4 mb-5">
-              <div
-                className="w-12 h-12 rounded-2xl flex items-center justify-center font-black text-lg flex-shrink-0"
-                style={{ background: 'linear-gradient(135deg, #F5A200 0%, #2DC4B2 100%)', color: '#0B0C0F' }}
-              >
-                EF
-              </div>
-              <div>
-                <div className="font-bold text-white">Edison Figueroa</div>
-                <div className="text-sm" style={{ color: '#838896' }}>
-                  Founder &amp; Builder, Orvka
-                </div>
-              </div>
-            </div>
-            <p className="text-sm leading-relaxed" style={{ color: '#838896' }}>
-              Edison is building Orvka end-to-end — product, design, and engineering.
-              A functional application foundation is already in place, with backend
-              services live on Google Cloud Platform.
-            </p>
-
           </div>
         </div>
       </div>
