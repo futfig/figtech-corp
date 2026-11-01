@@ -96,11 +96,11 @@ Git push to `main` triggers automatic CI/CD deploy via GitHub Actions.
 
 ## Design system
 
-Dark Stadium theme (shared with futfan product):
+Dark Stadium theme (shared with the Orvka product):
 - Background: `#0B0C0F`
 - Gold primary: `#F5A200`
 - Teal accent: `#2DC4B2`
-- See `futfan/design-system.md` for full spec
+- See `design-system.md` in `futfig/orvka-specs` for full spec
 
 ---
 
@@ -108,7 +108,9 @@ Dark Stadium theme (shared with futfan product):
 
 | Repo | Purpose |
 |------|---------|
-| `futfig/futfan-services` | Backend — Kotlin/Ktor, deployed on GCP App Engine |
-| `futfig/futfan-web` | Web app — React/TypeScript |
-| `futfig/futfan-android` | Android app — Kotlin/Compose |
+| `futfig/orvka-specs` | Cross-platform specs + design system |
+| `futfig/orvka-services` | Backend — Kotlin/Ktor, deployed on GCP Cloud Run |
+| `futfig/orvka-web` | Web app — React/TypeScript |
+| `futfig/orvka-ios` | iOS app — SwiftUI |
+| `futfig/orvka-android` | Android app — Kotlin/Compose |
 | `futfig/figtech-corp` | This repo — corporate website |
