@@ -13,7 +13,7 @@ export function Footer() {
             className="h-5 w-5 object-contain"
             draggable={false}
           />
-          <span>Orvka &copy; {year}</span>
+          <span>&copy; {year} FigTech LLC &middot; Orvka is a product of FigTech LLC, a Minnesota limited liability company.</span>
         </div>
 
         <div className="flex items-center gap-6">
