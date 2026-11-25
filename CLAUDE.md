@@ -86,9 +86,9 @@ Git push to `main` triggers automatic CI/CD deploy via GitHub Actions.
 ## Positioning & copy rules
 
 - Product/company name: **Orvka**
-- No mentions of FigTech or Favo
+- Legal entity: Orvka is a product of **FigTech LLC, a Minnesota limited liability company**. This line must stay visible in the Company section and the footer — Apple Developer Program enrollment (and similar verifications) checks that the website is tied to the enrolling legal entity. No mentions of Favo.
 - No mentions of FIFA, World Cup, or specific tournament years
-- No mentions of Minnesota or specific location
+- Location: state only (Minnesota) as part of the legal-entity line — never a street address (the registered address is a private residence)
 - No mailto: links — all contact routes to the form at `#contact`
 - Tone: credible early-stage startup, product-focused, not overhyped
 

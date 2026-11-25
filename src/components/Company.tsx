@@ -17,12 +17,15 @@ export function Company() {
 
         <div className="max-w-3xl mx-auto">
           <div className="glass-card p-7">
-            <h3 className="text-xl font-bold text-white mb-4">Orvka</h3>
+            <h3 className="text-xl font-bold text-white mb-4">FigTech LLC</h3>
             <p className="text-base leading-relaxed mb-5" style={{ color: '#838896' }}>
-              Orvka is a technology startup building a soccer prediction platform,
-              starting with tournament tracking, scenario analysis, and prediction tools
-              for major international competitions. We are in active MVP development with
-              a functional application foundation already in place.
+              Orvka is a product of FigTech LLC, a Minnesota limited liability company.
+              FigTech LLC develops and operates Orvka at orvka.com and in the Orvka apps.
+            </p>
+            <p className="text-base leading-relaxed mb-5" style={{ color: '#838896' }}>
+              Orvka is a soccer prediction platform, live at orvka.com, with tournament
+              tracking, scenario analysis, and prediction tools for major international
+              competitions.
             </p>
             <p className="text-base leading-relaxed mb-6" style={{ color: '#838896' }}>
               Our thesis is focused: serious soccer fans have few products built specifically
@@ -33,7 +36,7 @@ export function Company() {
 
             <div className="flex flex-wrap gap-4 text-sm">
               {[
-                { icon: <Building2 className="w-4 h-4" />, text: 'Orvka' },
+                { icon: <Building2 className="w-4 h-4" />, text: 'FigTech LLC · Minnesota, USA' },
                 { icon: <Code className="w-4 h-4" />, text: 'Pre-funded · MVP Stage' },
               ].map(({ icon, text }) => (
                 <span key={text} className="flex items-center gap-2" style={{ color: '#838896' }}>
